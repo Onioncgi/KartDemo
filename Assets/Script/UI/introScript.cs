@@ -8,8 +8,11 @@ public class introScript : MonoBehaviour {
 
     ///Games Convas
     public Canvas loadmenu;
-    public Canvas SetPlayer;
-    public Canvas SetCar;
+    public Canvas PlayerSel;
+    public Canvas PlayerSetup;
+
+    public Canvas KartSel;
+    public Canvas KartSetup;
 
     public Canvas SelOkReturn;
 
@@ -39,10 +42,15 @@ public class introScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        
+        ////////
         loadmenu = loadmenu.GetComponent<Canvas>();
-        SetPlayer = SetPlayer.GetComponent<Canvas>();
-        SetCar = SetCar.GetComponent<Canvas>();
+        PlayerSel = PlayerSel.GetComponent<Canvas>();
+        PlayerSetup = PlayerSetup.GetComponent<Canvas>();
+
+        KartSel = KartSel.GetComponent<Canvas>();
+        KartSetup = KartSetup.GetComponent<Canvas>();
+
         SelOkReturn = SelOkReturn.GetComponent<Canvas>();
         ////////
         PlayerOkBn = GetComponent<GameObject>();
@@ -72,6 +80,9 @@ public class introScript : MonoBehaviour {
        
     }
 	
+    /// <summary>
+    /// Panels this area control the panels that is use to start and exit the game and loading the load data
+    /// </summary>
     public void StartPanelV()
     {
         expanel.SetActive(false);
@@ -91,14 +102,19 @@ public class introScript : MonoBehaviour {
     
     public void LoadPanel()
     {
+        // for now this only display words as u press the exit panel
         print("Load button is press");
     }
 
+
+    /// <summary>
+    /// this is the area is where the player selection happen's..... ahahahahha ;)
+    /// </summary>
     public void SetupPlayerMenu()
     {
-        SetPlayer.enabled = true;
+        PlayerSel.enabled = true;
         loadmenu.enabled  = false;
-        SetCar.enabled    = false;
+        KartSetup.enabled    = false;
         SelOkReturn.enabled = true;
     }
 
@@ -109,9 +125,7 @@ public class introScript : MonoBehaviour {
 
     public void playerok()
     {
-        SetPlayer.enabled = false;
-        loadmenu.enabled = false;
-        SetCar.enabled = true;
+        
         
     }
 
@@ -119,18 +133,11 @@ public class introScript : MonoBehaviour {
     {
         if (setuptoreturn ==0)
         {
-            SetPlayer.enabled = true;
-            loadmenu.enabled = false;
-            SetCar.enabled = false;
-            setuptoreturn = 2;
+          
         }
         else if(setuptoreturn==2)
         {
-            SetPlayer.enabled = false;
-            loadmenu.enabled = true;
-            SetCar.enabled = false;
-            SelOkReturn.enabled = false;
-            setuptoreturn = 1;
+            
         }
         else
         {
@@ -149,5 +156,6 @@ public class introScript : MonoBehaviour {
         Application.Quit();
     }
 
+    
     
 }

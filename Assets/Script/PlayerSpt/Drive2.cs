@@ -6,8 +6,8 @@ public class Drive2 : MonoBehaviour {
 
     public float turnSpeed = 1000f;
     public float accellerateSpeed = 1000f;
-    private Rigidbody rbody;
-    // Use this for initialization
+    public Rigidbody rbody;
+    // Use this for initialization chets
 
 
     void Start () {
@@ -26,8 +26,8 @@ public class Drive2 : MonoBehaviour {
         //transform.Translate(0, 0, v);
         //transform.Rotate(0, h, 0);
             
-          rbody.AddTorque(0f, h * turnSpeed, 0f);
-          rbody.AddForce(transform.forward * v * accellerateSpeed);
+          rbody.AddTorque(0f, h * turnSpeed*Time.deltaTime, 0f);
+          rbody.AddForce(transform.forward * v * accellerateSpeed*Time.deltaTime);
 
     }
 }

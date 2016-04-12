@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class playermovement : MonoBehaviour {
-
-    GameObject player;
+public class Items : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

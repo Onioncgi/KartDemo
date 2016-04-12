@@ -8,9 +8,8 @@ public class ColorChange : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-       
-        
 
+        
 
     }
 	
