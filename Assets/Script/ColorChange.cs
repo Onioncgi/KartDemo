@@ -3,14 +3,13 @@ using System.Collections;
 
 public class ColorChange : MonoBehaviour {
 
-    public GameObject player;
+    private GameObject player;
     
 
 	// Use this for initialization
 	void Start () {
-       
-        
 
+        player = this.player.GetComponent<GameObject>();
 
     }
 	
