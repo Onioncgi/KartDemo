@@ -75,6 +75,7 @@
     <Compile Include="Assets\Script\PlayerSpt\Drive2.cs" />
     <Compile Include="Assets\Script\PlayerSpt\PlayerSelection.cs" />
     <Compile Include="Assets\Script\SaveNLoadG.cs" />
+    <Compile Include="Assets\Script\UI\GameStart.cs" />
     <Compile Include="Assets\Script\UI\MainMneuScript.cs" />
     <Compile Include="Assets\Script\UI\introScript.cs" />
     <Compile Include="Assets\Script\UI\loadingMenu.cs" />

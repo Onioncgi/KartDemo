@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class MainMneuScript : MonoBehaviour
 {
 
-    public GameObject startgame;
+    public GameObject StartGBn;
     // Use this for initialization
     void Start()
     {
-        startgame = startgame.GetComponent<GameObject>();
+        StartGBn = StartGBn.GetComponent<GameObject>();
     }
 
     public void startLevel()
