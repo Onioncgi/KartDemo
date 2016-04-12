@@ -7,9 +7,12 @@ public class MainMneuScript : MonoBehaviour
 {
 
     public GameObject StartGBn;
+   public  AudioSource audi;
     // Use this for initialization
     void Start()
     {
+        audi = audi.GetComponent<AudioSource>();
+        if(!audi.isPlaying) audi.Play();
         StartGBn = StartGBn.GetComponent<GameObject>();
     }
 
