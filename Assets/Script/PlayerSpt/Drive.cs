@@ -16,12 +16,12 @@ public class Drive : MonoBehaviour {
 	void Update () {
 
         ////if this your payer object
-        float translation = CrossPlatformInputManager.GetAxis("Vertical")* speed;
-        float rotation = CrossPlatformInputManager.GetAxis("Horizontal") * rotationSpeed;
+        float translation = CrossPlatformInputManager.GetAxis("Vertical");
+        float rotation = CrossPlatformInputManager.GetAxis("Horizontal") ;
 
-       /* translation *= Time.deltaTime;
+        translation *= Time.deltaTime;
         rotation *= Time.deltaTime;
         transform.Translate(0, 0, translation);
-        transform.Rotate(0, rotation, 0);	*/
+        transform.Rotate(0, rotation, 0);	
 	}
 }

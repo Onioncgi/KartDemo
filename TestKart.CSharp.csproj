@@ -70,12 +70,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\ColorChange.cs" />
+    <Compile Include="Assets\Script\ItemsSpt\Items.cs" />
     <Compile Include="Assets\Script\PlayerSpt\Drive.cs" />
+    <Compile Include="Assets\Script\PlayerSpt\Drive2.cs" />
     <Compile Include="Assets\Script\PlayerSpt\PlayerSelection.cs" />
+    <Compile Include="Assets\Script\SaveNLoadG.cs" />
     <Compile Include="Assets\Script\UI\MainMneuScript.cs" />
     <Compile Include="Assets\Script\UI\introScript.cs" />
     <Compile Include="Assets\Script\UI\loadingMenu.cs" />
-    <Compile Include="Assets\Script\player movement.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
