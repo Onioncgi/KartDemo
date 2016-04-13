@@ -8,7 +8,8 @@ public class ColorChange : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        
+        player.GetComponent<Renderer>().material.color = new Color(0f, 1, 0f);
+
     }
 	
 	public void redcolor()

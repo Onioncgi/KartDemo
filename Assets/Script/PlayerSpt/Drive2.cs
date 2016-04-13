@@ -7,6 +7,7 @@ public class Drive2 : MonoBehaviour {
     public float turnSpeed = 1000f;
     public float accellerateSpeed = 1000f;
     public Rigidbody rbody;
+    
     // Use this for initialization chets
 
 
