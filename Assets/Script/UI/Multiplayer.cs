@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class Multiplayer : MonoBehaviour {
+public class Multiplayer : MonoBehaviour
+{
+    public void MultiPlyerMenu()
+    {
+        SceneManager.LoadScene(4);
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

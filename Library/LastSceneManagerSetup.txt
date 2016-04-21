@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Loading.unity
-=======
-- path: Assets/SaveProject/testRunofCar.unity
->>>>>>> origin/master
+- path: Assets/Scenes/IntroScene.unity
   isLoaded: 1
   isActive: 1

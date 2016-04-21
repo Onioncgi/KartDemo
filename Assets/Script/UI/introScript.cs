@@ -16,7 +16,8 @@ public class introScript : MonoBehaviour {
 
     public Canvas SelOkReturn;
 
-
+    public InputField mainInputText;
+   
 
     /// <summary>
     /// panel showing 
@@ -42,6 +43,10 @@ public class introScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+
+        Text tex = GameObject.Find("tx2").GetComponent<Text>();
+        tex.text = mainInputText.text;
         
         ////////
         loadmenu = loadmenu.GetComponent<Canvas>();
@@ -79,7 +84,12 @@ public class introScript : MonoBehaviour {
 
        
     }
-	
+
+    void Update()
+    {
+        GameObject.Find("Main Camera").GetComponent<Camera>().transform.RotateAround(Vector3.zero, Vector3.up, 30 * Time.deltaTime);
+    }
+
     /// <summary>
     /// Panels this area control the panels that is use to start and exit the game and loading the load data
     /// </summary>
@@ -105,6 +115,7 @@ public class introScript : MonoBehaviour {
         // for now this only display words as u press the exit panel
         print("Load button is press");
     }
+
 
 
     /// <summary>
