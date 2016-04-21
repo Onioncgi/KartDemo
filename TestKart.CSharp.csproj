@@ -76,17 +76,20 @@
     <Compile Include="Assets\Script\PlayerSpt\PlayerSelection.cs" />
     <Compile Include="Assets\Script\PlayerSpt\playerhitstuff.cs" />
     <Compile Include="Assets\Script\SaveNLoadG.cs" />
+    <Compile Include="Assets\Script\UI\Carsel.cs" />
     <Compile Include="Assets\Script\UI\GameStart.cs" />
     <Compile Include="Assets\Script\UI\MainMneuScript.cs" />
     <Compile Include="Assets\Script\UI\Multiplayer.cs" />
     <Compile Include="Assets\Script\UI\introScript.cs" />
     <Compile Include="Assets\Script\UI\loadingMenu.cs" />
+    <Compile Include="Assets\Script\UI\playersel.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
     <Compile Include="Assets\UnityChan\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+    <Compile Include="Assets\click.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />

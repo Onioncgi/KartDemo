@@ -7,6 +7,7 @@ public class introScript : MonoBehaviour {
 
 
     ///Games Convas
+    public Canvas BG;
     public Canvas loadmenu;
     public Canvas PlayerSel;
     public Canvas PlayerSetup;
@@ -44,17 +45,25 @@ public class introScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+<<<<<<< HEAD
 
         Text tex = GameObject.Find("tx2").GetComponent<Text>();
         tex.text = mainInputText.text;
         
+=======
+>>>>>>> origin/master
         ////////
+        
         loadmenu = loadmenu.GetComponent<Canvas>();
         PlayerSel = PlayerSel.GetComponent<Canvas>();
         PlayerSetup = PlayerSetup.GetComponent<Canvas>();
+        BG = BG.GetComponent<Canvas>();
+
+        
 
         KartSel = KartSel.GetComponent<Canvas>();
         KartSetup = KartSetup.GetComponent<Canvas>();
+        deflauts();
 
         SelOkReturn = SelOkReturn.GetComponent<Canvas>();
         ////////
@@ -82,7 +91,9 @@ public class introScript : MonoBehaviour {
         stpanel = stpanel.GetComponent<GameObject>();
         expanel = expanel.GetComponent<GameObject>();
 
-       
+        
+
+
     }
 
     void Update()
@@ -100,6 +111,11 @@ public class introScript : MonoBehaviour {
         stpanel.SetActive(ishowing);
         
         
+    }
+
+    public void deflauts()
+    {
+        BG.enabled = true;
     }
 
     public void ExitPanelV()

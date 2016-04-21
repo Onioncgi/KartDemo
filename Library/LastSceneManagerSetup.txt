@@ -1,4 +1,11 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+sceneSetups: []
+=======
+>>>>>>> origin/master
 sceneSetups:
 - path: Assets/Scenes/IntroScene.unity
   isLoaded: 1
   isActive: 1
+>>>>>>> origin/master
